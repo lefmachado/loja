@@ -10,6 +10,7 @@ public class JPAUtil {
             .createEntityManagerFactory("loja");
 
     private JPAUtil() {
+        throw new UnsupportedOperationException("Esta é uma classe utilitária e não pode ser instanciada.");
     }
 
     public static EntityManager getEntityManager() {
